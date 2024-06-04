@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    #uber{
+        padding: 10px;
+        width: 1498px;
+        height: 880px;
+        background-color: black;
+        border: 100px;   
+    }
+    .container{
+        background-color: black;
+        
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around; 
+        
+    }
+   nav .right{
+        display: flex;
+        color: rgb(255, 255, 255);
+        border: 90px;
+        text-align: right;
+        position: absolute;
+        top: 25px;
+        right: 90px;
+        font-size: 18px;
+        word-spacing: 100px;
+        font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    nav .left{
+        display: flex;
+        color: rgb(255, 255, 255);
+        border: 90px;
+        position: absolute;
+        left: 150px;
+       
+       flex-wrap: wrap;
+       text-align: justify;
+       font-style:normal; 
+       font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;  
+    }
+    .arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  display: inline-block;
+}
+.oval-button{
+    border-radius: 50px; 
+    padding: 10px 20px;
+}
+   
+p{
+    word-spacing: 2px;
+    color: white;
+}
+h1{
+    color: white;
+}
+.part2{
+    
+    position:absolute;
+    border: 90px;
+    position: absolute;
+    left: 180px;
+    top: 280px;
+    font-size: 19.5px;
+    font-style: inherit;
+    word-spacing: 1px;
+}
+.part2>p{
+    line-height: 3.8;
+}
+button{
+    padding: 10px 20px;     
+    box-shadow: rgba(252, 252, 252, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 8px;   
+}
+.part2 input[type=text1] {
+    display: flex;
+    border: 10px  #ccc; 
+    padding: 6px; 
+    font-size: 26px;
+    border-radius: 5px;
+    line-height: 28px;  
+  }
+  .part2 input[type=text2] {
+    display: flex;
+    border: 10px  #ccc; 
+    padding: 6px; 
+    font-size: 26px;
+    border-radius: 5px;
+    line-height: 28px; 
+  }
+  .part2 
+   img{
+    display: flex  ;
+    position: absolute;
+    top:-150px;
+    right: -780px;
+    height: 700px;
+    border-radius: 10px;
+  }
+  .part3{
+    display: flex;
+    color: black;
+  }
+.part3>p{
+    color: black;
+}
+.part3 img{
+    display: flex;
+    border: 100px;
+    margin: 190px;
+    height: 550px;
+    justify-content: center;
+    margin-top: 70px;
+    
+}
+.part3 h1{
+    color: black;
+    display: flex;
+    margin-top: 200px;
+    text-justify: auto;
+    font-size: 63px;
+    position: absolute;
+    left: 900px;
+    top: 900px;
+    align-content: center;
+    justify-content: space-between;
+  
+}
+.part3>p{
+    color: black;
+    display: flex;
+    position: absolute;
+    position: absolute;
+    left: 900px;
+    top: 1320px;
+    align-content: center;
+    justify-content: space-between;
+    font-size: large;
+}
+.part3 button{
+    padding: 10px 20px;     
+    box-shadow: rgba(252, 252, 252, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 8px; 
+    display: flex;
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 1400px;
+    left: 900px;
+}
+#para{
+    position: absolute;
+    top: 1405px;
+    left: 1050px;
+}
+.part4 img {
+    display: flex;
+    position: absolute;
+    top: 1650px;
+   left: 750px;
+   height: 550px;
+   border: 150px;
+
+}
+.part4 button{
+    padding: 10px 20px;     
+    box-shadow: rgba(252, 252, 252, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 8px; 
+    display: flex;
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 2010px;
+    left: 300px;
+}
+#para1{
+    position: absolute;
+    top: 2010px;
+    left: 450px;
+    color: black;
+}
+.part4 h1{
+    color: black;
+    display: flex;
+    margin-top: 200px;
+    text-justify: auto;
+    font-size: 58px;
+    position: absolute;
+    left: 260px;
+    top: 1500px;
+    align-content: center;
+    justify-content: space-between;
+  
+}
+.part4>p{
+    color: black;
+    display: flex;
+    position: absolute;
+    position: absolute;
+    left: 260px;
+    top: 1935px;
+    align-content: center;
+    justify-content: space-between;
+    font-size: large;
+}
+.part5 button{
+    padding: 10px 20px;     
+    box-shadow: rgba(252, 252, 252, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 8px; 
+    display: flex;
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 2783px;
+    left: 900px;
+}
+.part5 img{
+    display: flex;
+    border: 100px;
+    margin: 180px;
+    height: 550px;
+    justify-content: center;
+    margin-top: 70px;
+    position: absolute;
+    top: 2300px;
+}
+.part5>p{
+    color: black;
+    display: flex;
+    position: absolute;
+    position: absolute;
+    left: 900px;
+    top: 2700px;
+    align-content: center;
+    justify-content: space-between;
+    font-size: large;
+}
+.part5 h1{
+    color: black;
+    display: flex;
+    margin-top: 200px;
+    text-justify: auto;
+    font-size: 50px;
+    position: absolute;
+    left: 900px;
+    top: 2350px;
+    align-content: center;
+    justify-content: space-between;
+}    
+#last{
+    padding: 10px;
+    width: 1498px;
+    height: 300px;
+    border: 1px solid rgb(255, 252, 252);
+    position: absolute;
+    top: 3000px;
+    margin-left: 0px;
+    background-color: #ccc;
+}
+.part6{
+    display: grid;
+
+}
+.part6 h1{
+    color: black;
+    margin-left: 150px;
+    position: absolute;
+    top: 100px;
+}
+.part7{
+    padding: 10px;
+        width: 1498px;
+        height: 880px;
+        background-color: black;
+        border: 100px; 
+        position: absolute;
+        top: 3321px;
+}
+.part7 h1{
+    margin-left: 130px;
+    margin-top: 100px;
+}
+.part7 p{
+    margin-left: 130px;
+}
+</style>
+
+<body>
+    <nav id="uber" class="container">
+        <div class="left">
+            
+            <pre> <big> <p> Uber Ride Drive Business UberEats About <i class="arrow down"></i> </big> </p></pre>
+            
+        </div>
+        <div class="right">
+            <pre><p><i class="fa fa-globe" aria-hidden="true"> EN Help Log in</i> <button class="oval-button">Sign Up</button> </p></pre> 
+             
+        </div>
+    
+    </nav>
+        
+        <div class="part2">
+        <div>
+            <h1><big><b>Go anywhere with</b></big></h1>
+            <h1><b>Uber</b></h1>
+            <p>Request a ride, hop in, and go.</p>
+            <input type="text1" placeholder="Enter Location">
+            <br>
+            <input type="text2" placeholder="Enter Destination"> 
+            <br>
+            <button class="button">See prices</button>
+            <img src="1.png">
+            
+        </div>
+        </div>
+        <div class="part3">
+            <img src="2.png" alt="">
+            <h1><b>Drive when you <br>want, make what <br>you need</b></h1>
+            <p>Make money on your schedule with deliveries or rides—or<br> both. You can use your own car or choose a rental <br> through Uber.</p>
+            <button>Get Started</button>
+            <p id="para"> <u>Already have an account? Sign in</u></p>    
+        </div>
+        <div class="part4">
+            <img src="3.png" alt="">
+            <h1><b>The Uber you<br>know, reimagined <br>for business</b></h1>
+            <p>Uber for Business is a platform for managing global rides and<br> meals, and local deliveries, for companies of any size. <br></p>
+            <button>Get Started</button>
+            <p id="para1"> <u>Check out our solutions</u></p>    
+        </div>
+        <div class="part5">
+            <img src="4.png" alt="">
+            <h1>Make money by renting out <br>your car</h1>
+            <p>Connect with thousands of drivers and earn more per week<br> with Uber’ s free fleet management tools.</p>
+            <button>Get Started</button>
+        </div>
+        <div id="last" class="part6">
+            <h1>It’s easier in the apps</h1>
+
+        </div>
+        <footer id="footer" class="part7">
+            <div>
+                <h1>Uber</h1>
+                <br>
+                <p>Visit Help Center</p>
+
+            </div>
+
+        </footer>
+          
+</body>
+</html>
